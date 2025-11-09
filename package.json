@@ -1,10 +1,10 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Servidor JSON para el proyecto (sin index.js)",
+  "description": "Servidor JSON para Render",
   "private": true,
   "scripts": {
-    "start": "json-server db.json --host 0.0.0.0 --port $PORT --no-static"
+    "start": "json-server --watch db.json --host 0.0.0.0 --port $PORT"
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.1",
