@@ -1,10 +1,11 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Servidor JSON para Render",
+  "description": "Servidor JSON para Render (usando server.js)",
   "private": true,
+  "type": "module",
   "scripts": {
-    "start": "json-server --watch db.json --host 0.0.0.0 --port $PORT"
+    "start": "node server.js"
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.1",
