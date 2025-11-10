@@ -25,6 +25,19 @@ app.get("/users", (req, res) => {
   res.json(db.users);
 });
 
+// ✅ Obtener usuario por ID
+app.get("/users/:id", (req, res) => {
+  const db = readDB();
+  const { id } = req.params;
+  const user = db.users.find(u => u.id === id);
+
+  if (!user) {
+    return res.status(404).json({ error: "Usuario no encontrado" });
+  }
+
+  res.json(user);
+});
+
 // Agregar usuario
 app.post("/users", (req, res) => {
   const db = readDB();
