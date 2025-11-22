@@ -1,3 +1,11 @@
 {
-  "users": []
+  "users": [
+    {
+      "nombre": "Farid",
+      "email": "sdsdsdsd@gmail.com",
+      "password": "asd123",
+      "carrera": "Economía",
+      "id": "1763854711205"
+    }
+  ]
 }
